@@ -1,0 +1,42 @@
+:root {
+    --font-primary:
+        ui-monospace,
+        SFMono-Regular,
+        Menlo,
+        Monaco,
+        Consolas,
+        "Liberation Mono",
+        "Courier New",
+        monospace;
+
+    --color-white: #ffffff;
+    --color-black: #111214;
+
+    --color-primary: #ffd000;
+    --color-primary-hover: #edc200;
+    --color-primary-light: #fff0a4;
+
+    --color-heading: #12233e;
+    --color-text: #3f4b5e;
+    --color-muted: #7c8797;
+    --color-border: #dce1e8;
+
+    --color-header-background: #ffffff;
+    --color-hero-background: #fff7cf;
+    --color-section-background: #ffffff;
+    --color-profile-image-background: #f1f2f4;
+
+    --wrapper-padding: 24px;
+    --header-content-width: 1056px;
+    --profile-content-width: 1156px;
+
+    --header-height: 74px;
+
+    --shadow-profile:
+        0 30px 70px rgba(18, 35, 62, 0.1);
+
+    --shadow-card:
+        0 18px 46px rgba(18, 35, 62, 0.1);
+
+    --transition-base: 0.25s ease;
+}

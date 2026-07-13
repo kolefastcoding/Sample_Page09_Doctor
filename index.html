@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>9 - Doctor</title>
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="l-header">
+            <div class="wrapper">
+                <a class="l-header__logo" href="./index.html">
+                    <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="logo" width="200" height="92"
+                        loading="eager">
+                </a>
+
+                <nav class="l-header__nav" aria-label="Primary navigation">
+                    <ul class="l-header__nav-list">
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link is-active" href="#home" aria-current="page">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link" href="#about">
+                                About
+                            </a>
+                        </li>
+
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link" href="./assets/files/ralph-edwards-cv.pdf">
+                                CV
+                            </a>
+                        </li>
+
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link" href="#education">
+                                Education
+                            </a>
+                        </li>
+
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link" href="./testimonial.html">
+                                Testimonial
+                            </a>
+                        </li>
+
+                        <li class="l-header__nav-item">
+                            <a class="l-header__nav-link" href="./article.html">
+                                Article
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a class="c-button c-button--primary l-header__contact" href="./contact.html">
+                    <span class="c-button__text">
+                        Contact
+                    </span>
+                </a>
+            </div>
+        </header>
+
+        <main class="l-main">
+            <section class="p-section-hero" id="home">
+                <div class="wrapper">
+                    <div class="p-section-hero__content">
+                        <p class="p-section-hero__label">
+                            <span class="p-section-hero__label-text">
+                                💉 Ralph Edwards
+                            </span>
+                        </p>
+
+                        <h1 class="p-section-hero__title">
+                            27+ Years of
+                            <br>
+                            Neurologists Doctor.
+                        </h1>
+
+                        <p class="p-section-hero__description">
+                            Phasellus blandit, metus sit amet euismod facilisis,
+                            ante justo mollis elit, eu suscipit tellus lorem non
+                            dolor aliquam faucibus odio tempus nibh.
+                        </p>
+
+                        <div class="p-section-hero__actions">
+                            <a class="c-button c-button--primary" href="#about">
+                                <span class="c-button__text">
+                                    Learn About Me
+                                </span>
+                            </a>
+
+                            <a class="c-button c-button--outline" href="./testimonial.html">
+                                <span class="c-button__text">
+                                    Patient Success Story
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="p-section-hero__media">
+                        <img class="p-section-hero__image" src="./assets/images/hero-doctor.png"
+                            alt="ralph-edwards-doctor" width="648" height="800" loading="eager">
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-section-profile" id="about">
+                <div class="wrapper">
+                    <article class="p-section-profile__card">
+                        <div class="p-section-profile__media">
+                            <img class="p-section-profile__image" src="./assets/images/profile-doctor.png"
+                                alt="ralph-edwards-profile" width="200" height="272" loading="lazy">
+                        </div>
+
+                        <div class="p-section-profile__content">
+                            <h2 class="p-section-profile__title">
+                                Hello, I’m Ralph Edwards.
+                            </h2>
+
+                            <p class="p-section-profile__description">
+                                Phasellus blandit, metus sit amet euismod
+                                facilisis, ante justo mollis elit, eu suscipit
+                                tellus lorem non dolor. Aliquam faucibus odio
+                                tempus nibh fringilla tincidunt. Proin luctus
+                                dui odio, sed egestas erat condimentum non.
+                            </p>
+
+                            <div class="p-section-profile__actions">
+                                <a class="c-button c-button--primary" href="./contact.html">
+                                    <span class="c-button__text">
+                                        Send Message
+                                    </span>
+
+                                    <img class="c-button__icon" src="./assets/icons/icon-arrow-right.svg"
+                                        alt="icon-arrow-right" width="24" height="24" loading="lazy">
+                                </a>
+
+                                <a class="c-button c-button--outline" href="./assets/files/ralph-edwards-cv.pdf"
+                                    download>
+                                    <img class="c-button__icon" src="./assets/icons/icon-download.svg"
+                                        alt="icon-download" width="24" height="24" loading="lazy">
+
+                                    <span class="c-button__text">
+                                        Download Cv
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <aside class="p-section-profile__featured">
+                            <p class="p-section-profile__featured-label">
+                                Featured By:
+                            </p>
+
+                            <ul class="p-section-profile__featured-list">
+                                <li class="p-section-profile__featured-item">
+                                    <img class="p-section-profile__featured-logo"
+                                        src="./assets/images/logo-boston-childrens.svg"
+                                        alt="boston-childrens-hospital-logo" width="108" height="64" loading="lazy">
+                                </li>
+
+                                <li class="p-section-profile__featured-item">
+                                    <img class="p-section-profile__featured-logo"
+                                        src="./assets/images/logo-cincinnati-childrens.svg"
+                                        alt="cincinnati-childrens-hospital-logo" width="108" height="64" loading="lazy">
+                                </li>
+
+                                <li class="p-section-profile__featured-item">
+                                    <img class="p-section-profile__featured-logo"
+                                        src="./assets/images/logo-florida-hospital.svg" alt="florida-hospital-logo"
+                                        width="108" height="64" loading="lazy">
+                                </li>
+                            </ul>
+                        </aside>
+                    </article>
+                </div>
+            </section>
+
+            <section class="p-section-history" id="education">
+                <div class="wrapper">
+                    <div class="p-section-history__heading">
+                        <h2 class="p-section-history__title">
+                            My Working History
+                        </h2>
+
+                        <p class="p-section-history__description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Maecenas dapibus leo vel augue suscipit
+                            bibendum.
+                        </p>
+                    </div>
+
+                    <ul class="p-section-history__list">
+                        <li class="p-section-history__item">
+                            <article class="p-section-history__card">
+                                <div class="p-section-history__media">
+                                    <img class="p-section-history__image"
+                                        src="./assets/images/singapore-general-hospital.png"
+                                        alt="singapore-general-hospital" width="400" height="250" loading="lazy">
+                                </div>
+
+                                <div class="p-section-history__content">
+                                    <p class="p-section-history__period is-current">
+                                        Currently Working
+                                    </p>
+
+                                    <h3 class="p-section-history__card-title">
+                                        Singapore General Hospital
+                                    </h3>
+
+                                    <p class="p-section-history__card-description">
+                                        Donec ut imperdiet augue, ac rhoncus
+                                        arcu. In ac mauris commodo, ultrices
+                                        felis vitae, tempor eros.
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="p-section-history__item">
+                            <article class="p-section-history__card">
+                                <div class="p-section-history__media">
+                                    <img class="p-section-history__image"
+                                        src="./assets/images/university-of-tokyo-hospital.png"
+                                        alt="university-of-tokyo-hospital" width="400" height="250" loading="lazy">
+                                </div>
+
+                                <div class="p-section-history__content">
+                                    <p class="p-section-history__period">
+                                        Jan, 2019 to March, 2021
+                                    </p>
+
+                                    <h3 class="p-section-history__card-title">
+                                        University of Tokyo Hospital
+                                    </h3>
+
+                                    <p class="p-section-history__card-description">
+                                        Donec ut imperdiet augue, ac rhoncus
+                                        arcu. In ac mauris commodo, ultrices
+                                        felis vitae, tempor eros.
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+
+                        <li class="p-section-history__item">
+                            <article class="p-section-history__card">
+                                <div class="p-section-history__media">
+                                    <img class="p-section-history__image"
+                                        src="./assets/images/johns-hopkins-hospital.png" alt="johns-hopkins-hospital"
+                                        width="400" height="250" loading="lazy">
+                                </div>
+
+                                <div class="p-section-history__content">
+                                    <p class="p-section-history__period">
+                                        Mar, 2017 to Dec, 2018
+                                    </p>
+
+                                    <h3 class="p-section-history__card-title">
+                                        Johns Hopkins Hospital
+                                    </h3>
+
+                                    <p class="p-section-history__card-description">
+                                        Donec ut imperdiet augue, ac rhoncus
+                                        arcu. In ac mauris commodo, ultrices
+                                        felis vitae, tempor eros.
+                                    </p>
+                                </div>
+                            </article>
+                        </li>
+                    </ul>
+
+                    <div class="p-section-history__navigation">
+                        <button class="p-section-history__nav p-section-history__nav--prev" type="button"
+                            aria-label="Previous working history">
+                            <img class="p-section-history__nav-icon" src="./assets/icons/icon-arrow-right.svg"
+                                alt="icon-arrow-left" width="20" height="20" loading="lazy">
+                        </button>
+
+                        <button class="p-section-history__nav p-section-history__nav--next" type="button"
+                            aria-label="Next working history">
+                            <img class="p-section-history__nav-icon" src="./assets/icons/icon-arrow-right.svg"
+                                alt="icon-arrow-right" width="20" height="20" loading="lazy">
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="l-footer">
+            <div class="wrapper">
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

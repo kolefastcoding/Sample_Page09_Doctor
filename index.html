@@ -34,7 +34,7 @@
                 <nav class="l-header__nav" id="primary-navigation" aria-label="Primary navigation">
                     <ul class="l-header__nav-list">
                         <li class="l-header__nav-item">
-                            <a class="l-header__nav-link " href="#home" aria-current="page">
+                            <a class="l-header__nav-link" href="#home" aria-current="page">
                                 Home
                             </a>
                         </li>
@@ -108,7 +108,7 @@
                                 </span>
                             </a>
 
-                            <a class="c-button c-button--outline" href="#testimonial">
+                            <a class="c-button c-button--outline" href="#patient-stories">
                                 <span class="c-button__text">
                                     Patient Success Story
                                 </span>
@@ -125,7 +125,7 @@
 
             <section class="p-section-profile" id="about">
                 <div class="wrapper">
-                    <article class="p-section-profile__card">
+                    <div class="p-section-profile__card">
                         <div class="p-section-profile__media">
                             <img class="p-section-profile__image" src="./assets/images/profile-doctor.png"
                                 alt="ralph-edwards-profile" width="200" height="272" loading="lazy">
@@ -190,7 +190,7 @@
                                 </li>
                             </ul>
                         </aside>
-                    </article>
+                    </div>
                 </div>
             </section>
 
@@ -306,9 +306,9 @@
             <section class="p-section-testimonial" id="testimonial">
                 <div class="wrapper">
                     <div class="p-section-testimonial__content">
-                        <p class="p-section-testimonial__label">
+                        <h2 class="p-section-testimonial__label">
                             What my college says about me.
-                        </p>
+                        </h2>
                         <blockquote class="p-section-testimonial__quote">
                             <p class="p-section-testimonial__quote-text">
                                 “Life is unpredictable, not everything’s in our
@@ -319,13 +319,14 @@
                         <div class="p-section-testimonial__footer">
                             <div class="p-section-testimonial__author">
                                 <p class="p-section-testimonial__author-name">
-                                    Mr. John Wick
+                                    MR. John Wick
                                 </p>
                                 <p class="p-section-testimonial__author-position">
                                     Psychiatrist Doctor
                                 </p>
                             </div>
-                            <div class="p-section-testimonial__pagination" aria-label="Testimonial pagination">
+                            <div class="p-section-testimonial__pagination" role="group"
+                                aria-label="Testimonial pagination">
                                 <button class="p-section-testimonial__pagination-button" type="button"
                                     aria-label="Show testimonial 1">
                                 </button>
@@ -346,7 +347,7 @@
                     </div>
                     <div class="p-section-testimonial__media">
                         <img class="p-section-testimonial__image" src="./assets/images/testimonial-medical-team.png"
-                            alt="" width="590" height="538" loading="lazy">
+                            alt="testimonial-medical-team" width="590" height="538" loading="lazy">
                     </div>
                 </div>
             </section>
@@ -549,7 +550,7 @@
                             alt="the-highly-sensitive-person-books" width="972" height="602" loading="lazy">
                     </div>
 
-                    <article class="p-section-sensitive-person__content">
+                    <div class="p-section-sensitive-person__content">
                         <h2 class="p-section-sensitive-person__title">
                             The Highly Sensitive Person
                         </h2>
@@ -612,10 +613,10 @@
                                 </p>
                             </li>
                         </ul>
-                    </article>
+                    </div>
                 </div>
             </section>
-            <section class="p-section-patient-stories" id="testimonial">
+            <section class="p-section-patient-stories" id="patient-stories">
                 <div class="wrapper">
                     <div class="p-section-patient-stories__content">
                         <h2 class="p-section-patient-stories__title">
@@ -634,7 +635,7 @@
                                 <button class="p-section-patient-stories__nav p-section-patient-stories__nav--prev"
                                     type="button" aria-label="Previous patient story">
                                     <img class="p-section-patient-stories__nav-icon"
-                                        src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-left" width="20"
+                                        src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
                                         height="20" loading="lazy">
                                 </button>
 
@@ -646,7 +647,8 @@
                                 </button>
                             </div>
 
-                            <div class="p-section-patient-stories__pagination" aria-label="Patient stories pagination">
+                            <div class="p-section-patient-stories__pagination" role="group"
+                                aria-label="Patient stories pagination">
                                 <button class="p-section-patient-stories__pagination-button" type="button"
                                     aria-label="Show patient story 1">
                                 </button>
@@ -702,7 +704,7 @@
                             <button class="p-section-latest-event-show__nav p-section-latest-event-show__nav--prev"
                                 type="button" aria-label="Previous event">
                                 <img class="p-section-latest-event-show__nav-icon"
-                                    src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-left" width="20"
+                                    src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
                                     height="20" loading="lazy">
                             </button>
 

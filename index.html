@@ -23,8 +23,15 @@
                     <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="logo" width="200" height="92"
                         loading="eager">
                 </a>
+                <button class="l-header__menu-button js-menu-toggle" type="button" aria-label="Open navigation menu"
+                    aria-expanded="false" aria-controls="primary-navigation">
+                    <img class="l-header__menu-icon l-header__menu-icon--open" src="./assets/icons/icon-menu.svg"
+                        alt="icon-menu" width="24" height="24" loading="eager">
 
-                <nav class="l-header__nav" aria-label="Primary navigation">
+                    <img class="l-header__menu-icon l-header__menu-icon--close" src="./assets/icons/icon-close.svg"
+                        alt="icon-close" width="24" height="24" loading="eager">
+                </button>
+                <nav class="l-header__nav" id="primary-navigation" aria-label="Primary navigation">
                     <ul class="l-header__nav-list">
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link is-active" href="#home" aria-current="page">
@@ -39,7 +46,7 @@
                         </li>
 
                         <li class="l-header__nav-item">
-                            <a class="l-header__nav-link" href="./assets/files/ralph-edwards-cv.pdf">
+                            <a class="l-header__nav-link" href="#cv">
                                 CV
                             </a>
                         </li>
@@ -51,20 +58,20 @@
                         </li>
 
                         <li class="l-header__nav-item">
-                            <a class="l-header__nav-link" href="./testimonial.html">
+                            <a class="l-header__nav-link" href="#testimonial">
                                 Testimonial
                             </a>
                         </li>
 
                         <li class="l-header__nav-item">
-                            <a class="l-header__nav-link" href="./article.html">
+                            <a class="l-header__nav-link" href="#article">
                                 Article
                             </a>
                         </li>
                     </ul>
                 </nav>
 
-                <a class="c-button c-button--primary l-header__contact" href="./contact.html">
+                <a class="c-button c-button--primary l-header__contact" href="#contact">
                     <span class="c-button__text">
                         Contact
                     </span>
@@ -101,7 +108,7 @@
                                 </span>
                             </a>
 
-                            <a class="c-button c-button--outline" href="./testimonial.html">
+                            <a class="c-button c-button--outline" href="#testimonial">
                                 <span class="c-button__text">
                                     Patient Success Story
                                 </span>
@@ -138,7 +145,7 @@
                             </p>
 
                             <div class="p-section-profile__actions">
-                                <a class="c-button c-button--primary" href="./contact.html">
+                                <a class="c-button c-button--primary" href="#contact">
                                     <span class="c-button__text">
                                         Send Message
                                     </span>
@@ -147,8 +154,7 @@
                                         alt="icon-arrow-right" width="24" height="24" loading="lazy">
                                 </a>
 
-                                <a class="c-button c-button--outline" href="./assets/files/ralph-edwards-cv.pdf"
-                                    download>
+                                <a class="c-button c-button--outline" href="#cv">
                                     <img class="c-button__icon" src="./assets/icons/icon-download.svg"
                                         alt="icon-download" width="24" height="24" loading="lazy">
 
@@ -286,7 +292,7 @@
                         <button class="p-section-history__nav p-section-history__nav--prev" type="button"
                             aria-label="Previous working history">
                             <img class="p-section-history__nav-icon" src="./assets/icons/icon-arrow-right.svg"
-                                alt="icon-arrow-left" width="20" height="20" loading="lazy">
+                                alt="icon-arrow-right" width="20" height="20" loading="lazy">
                         </button>
 
                         <button class="p-section-history__nav p-section-history__nav--next" type="button"
@@ -297,6 +303,245 @@
                     </div>
                 </div>
             </section>
+            <section class="p-section-testimonial" id="testimonial">
+                <div class="wrapper">
+                    <div class="p-section-testimonial__content">
+                        <p class="p-section-testimonial__label">
+                            What my college says about me.
+                        </p>
+                        <blockquote class="p-section-testimonial__quote">
+                            <p class="p-section-testimonial__quote-text">
+                                “Life is unpredictable, not everything’s in our
+                                control. But as long as you with the right people
+                                you can handle anything.”
+                            </p>
+                        </blockquote>
+                        <div class="p-section-testimonial__footer">
+                            <div class="p-section-testimonial__author">
+                                <p class="p-section-testimonial__author-name">
+                                    Mr. John Wick
+                                </p>
+                                <p class="p-section-testimonial__author-position">
+                                    Psychiatrist Doctor
+                                </p>
+                            </div>
+                            <div class="p-section-testimonial__pagination" aria-label="Testimonial pagination">
+                                <button class="p-section-testimonial__pagination-button" type="button"
+                                    aria-label="Show testimonial 1">
+                                </button>
+
+                                <button class="p-section-testimonial__pagination-button is-active" type="button"
+                                    aria-label="Show testimonial 2" aria-current="true">
+                                </button>
+
+                                <button class="p-section-testimonial__pagination-button" type="button"
+                                    aria-label="Show testimonial 3">
+                                </button>
+
+                                <button class="p-section-testimonial__pagination-button" type="button"
+                                    aria-label="Show testimonial 4">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-section-testimonial__media">
+                        <img class="p-section-testimonial__image" src="./assets/images/testimonial-medical-team.png"
+                            alt="" width="590" height="538" loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="p-section-qualification" id="cv">
+                <div class="wrapper">
+                    <div class="p-section-qualification__heading">
+                        <h2 class="p-section-qualification__title">
+                            My Qualification &amp; Awards
+                        </h2>
+
+                        <p class="p-section-qualification__description">
+                            Mauris porttitor eleifend odio, id venenatis orci ornare ac.
+                            Nullam id convallis nisl. Sed ullamcorper lacinia suscipit.
+                        </p>
+                    </div>
+
+                    <div class="p-section-qualification__content">
+                        <ul class="p-section-qualification__education-list">
+                            <li class="p-section-qualification__education-item">
+                                <div class="p-section-qualification__education-meta">
+                                    <p class="p-section-qualification__school">
+                                        Oxford University
+                                    </p>
+
+                                    <p class="p-section-qualification__period">
+                                        Jan, 2016 to Jan, 2021
+                                    </p>
+                                </div>
+
+                                <div class="p-section-qualification__education-content">
+                                    <h3 class="p-section-qualification__degree">
+                                        Bachelor of Medicine &amp; Bachelor
+                                        <br>
+                                        of Surgery (MBBS)
+                                    </h3>
+
+                                    <p class="p-section-qualification__education-description">
+                                        Donec ut imperdiet augue, ac rhoncus arcu.
+                                        In ac mauris commodo, ultrices felis vitae,
+                                        tempor eros.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="p-section-qualification__education-item">
+                                <div class="p-section-qualification__education-meta">
+                                    <p class="p-section-qualification__school">
+                                        Oxford University
+                                    </p>
+
+                                    <p class="p-section-qualification__period">
+                                        Jan, 2016 to Jan, 2021
+                                    </p>
+                                </div>
+
+                                <div class="p-section-qualification__education-content">
+                                    <h3 class="p-section-qualification__degree">
+                                        Bachelor of Social Science
+                                    </h3>
+
+                                    <p class="p-section-qualification__education-description">
+                                        Integer vel nulla condimentum, tempor risus
+                                        eu, blandit urna. Quisque fringilla ex in
+                                        urna pretium.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="p-section-qualification__education-item">
+                                <div class="p-section-qualification__education-meta">
+                                    <p class="p-section-qualification__school">
+                                        Oxford University
+                                    </p>
+
+                                    <p class="p-section-qualification__period">
+                                        Jan, 2016 to Jan, 2021
+                                    </p>
+                                </div>
+
+                                <div class="p-section-qualification__education-content">
+                                    <h3 class="p-section-qualification__degree">
+                                        Bachelor of Science and
+                                        <br>
+                                        Engineering
+                                    </h3>
+
+                                    <p class="p-section-qualification__education-description">
+                                        Proin varius diam vitae neque ornare
+                                        ullamcorper.
+                                    </p>
+                                </div>
+                            </li>
+
+                            <li class="p-section-qualification__education-item">
+                                <div class="p-section-qualification__education-meta">
+                                    <p class="p-section-qualification__school">
+                                        University of Cambridge
+                                    </p>
+
+                                    <p class="p-section-qualification__period">
+                                        Jan, 2016 to Jan, 2021
+                                    </p>
+                                </div>
+
+                                <div class="p-section-qualification__education-content">
+                                    <h3 class="p-section-qualification__degree">
+                                        Bachelor of Communication
+                                    </h3>
+
+                                    <p class="p-section-qualification__education-description">
+                                        Proin varius diam vitae neque ornare
+                                        ullamcorper. Maecenas vehicula sem eu dui
+                                        molestie aliquam.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <ul class="p-section-qualification__award-list">
+                            <li class="
+                        p-section-qualification__award-item
+                        p-section-qualification__award-item--lasker
+                    ">
+                                <article class="p-section-qualification__award-card">
+                                    <span class="p-section-qualification__award-number">
+                                        01
+                                    </span>
+
+                                    <img class="p-section-qualification__award-image"
+                                        src="./assets/images/award-lasker.png" alt="award-lasker" width="164"
+                                        height="164" loading="lazy">
+
+                                    <h3 class="p-section-qualification__award-title">
+                                        Lasker Award
+                                    </h3>
+
+                                    <p class="p-section-qualification__award-description">
+                                        Donec ut imperdiet augue, ac rhoncus arcu.
+                                        In ac mauris commodo.
+                                    </p>
+                                </article>
+                            </li>
+
+                            <li class="
+                        p-section-qualification__award-item
+                        p-section-qualification__award-item--howland
+                    ">
+                                <article class="p-section-qualification__award-card">
+                                    <span class="p-section-qualification__award-number">
+                                        02
+                                    </span>
+
+                                    <img class="p-section-qualification__award-image"
+                                        src="./assets/images/award-john-howland.png" alt="award-john-howland"
+                                        width="164" height="164" loading="lazy">
+
+                                    <h3 class="p-section-qualification__award-title">
+                                        John Howland Award
+                                    </h3>
+
+                                    <p class="p-section-qualification__award-description">
+                                        Donec ut imperdiet augue, ac rhoncus arcu.
+                                        In ac mauris commodo.
+                                    </p>
+                                </article>
+                            </li>
+
+                            <li class="
+                        p-section-qualification__award-item
+                        p-section-qualification__award-item--maxwell
+                        p-section-qualification__award-item--featured
+                    ">
+                                <article class="p-section-qualification__award-card">
+                                    <span class="p-section-qualification__award-number">
+                                        03
+                                    </span>
+
+                                    <img class="p-section-qualification__award-image"
+                                        src="./assets/images/award-maxwell-finland.png" alt="award-maxwell-finland"
+                                        width="164" height="164" loading="lazy">
+
+                                    <h3 class="p-section-qualification__award-title">
+                                        Maxwell Finland Award
+                                    </h3>
+
+                                    <p class="p-section-qualification__award-description">
+                                        Donec ut imperdiet augue, ac rhoncus arcu.
+                                        In ac mauris commodo.
+                                    </p>
+                                </article>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <footer class="l-footer">
@@ -304,6 +549,7 @@
             </div>
         </footer>
     </div>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

@@ -41,9 +41,15 @@
     --color-border: #dce1e8;
 
     --color-header-background: #ffffff;
-    --color-hero-background: #fff7cf;
+    --color-hero-background: #FFF7D1;
     --color-section-background: #ffffff;
     --color-profile-image-background: #f1f2f4;
+
+    --color-footer-background: #132238;
+    --color-footer-heading: #ffffff;
+    --color-footer-text: #9ba6b7;
+    --color-footer-line: rgba(255, 255, 255, 0.12);
+    --color-footer-link-hover: #ffffff;
 
     --wrapper-padding: 24px;
     --header-content-width: 1056px;

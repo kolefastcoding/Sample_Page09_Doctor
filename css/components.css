@@ -39,7 +39,7 @@
 }
 
 .c-button--outline {
-    background-color: transparent;
+    background-color: #FFFFFF;
     border-color: var(--color-primary);
 }
 

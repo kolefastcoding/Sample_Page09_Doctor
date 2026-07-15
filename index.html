@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>9 - Doctor</title>
-
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/components.css">
-    <link rel="stylesheet" href="./css/layout.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>
+        9 - Doctor
+    </title>
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/variables.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="./css/components.css" rel="stylesheet">
+    <link href="./css/layout.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
 </head>
 
 <body>
@@ -20,65 +20,61 @@
         <header class="l-header">
             <div class="wrapper">
                 <a class="l-header__logo" href="./index.html">
-                    <img class="l-header__logo-image" src="./assets/images/logo.svg" alt="logo" width="200" height="92"
-                        loading="eager">
+                    <img alt="logo" class="l-header__logo-image" height="92" loading="eager"
+                        src="./assets/images/logo.svg" width="200">
                 </a>
-                <button class="l-header__menu-button js-menu-toggle" type="button" aria-label="Open navigation menu"
-                    aria-expanded="false" aria-controls="primary-navigation">
-                    <img class="l-header__menu-icon l-header__menu-icon--open" src="./assets/icons/icon-menu.svg"
-                        alt="icon-menu" width="24" height="24" loading="eager">
-
-                    <img class="l-header__menu-icon l-header__menu-icon--close" src="./assets/icons/icon-close.svg"
-                        alt="icon-close" width="24" height="24" loading="eager">
+                <button aria-controls="primary-navigation" aria-expanded="false" aria-label="Open navigation menu"
+                    class="l-header__menu-button js-menu-toggle" type="button">
+                    <span class="l-header__menu-icon l-header__menu-icon--open">
+                        <img alt="icon-menu" height="24" loading="eager" src="./assets/icons/icon-menu.svg" width="24">
+                    </span>
+                    <span class="l-header__menu-icon l-header__menu-icon--close">
+                        <img alt="icon-close" height="24" loading="eager" src="./assets/icons/icon-close.svg"
+                            width="24">
+                    </span>
                 </button>
-                <nav class="l-header__nav" id="primary-navigation" aria-label="Primary navigation">
+                <nav aria-label="Primary navigation" class="l-header__nav" id="primary-navigation">
                     <ul class="l-header__nav-list">
                         <li class="l-header__nav-item">
-                            <a class="l-header__nav-link" href="#home" aria-current="page">
+                            <a aria-current="page" class="l-header__nav-link" href="#home">
                                 Home
                             </a>
                         </li>
-
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link" href="#about">
                                 About
                             </a>
                         </li>
-
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link" href="#cv">
                                 CV
                             </a>
                         </li>
-
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link" href="#education">
                                 Education
                             </a>
                         </li>
-
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link" href="#testimonial">
                                 Testimonial
                             </a>
                         </li>
-
                         <li class="l-header__nav-item">
                             <a class="l-header__nav-link" href="#article">
                                 Article
                             </a>
                         </li>
+                        <li class="l-header__nav-item l-header__nav-item--contact">
+                            <a class="l-header__nav-contact" href="#contact">
+                                Contact
+                            </a>
+                        </li>
                     </ul>
-                </nav>
 
-                <a class="c-button c-button--primary l-header__contact" href="#contact">
-                    <span class="c-button__text">
-                        Contact
-                    </span>
-                </a>
+                </nav>
             </div>
         </header>
-
         <main class="l-main">
             <section class="p-section-hero" id="home">
                 <div class="wrapper">
@@ -88,26 +84,22 @@
                                 💉 Ralph Edwards
                             </span>
                         </p>
-
                         <h1 class="p-section-hero__title">
                             27+ Years of
                             <br>
                             Neurologists Doctor.
                         </h1>
-
                         <p class="p-section-hero__description">
                             Phasellus blandit, metus sit amet euismod facilisis,
                             ante justo mollis elit, eu suscipit tellus lorem non
                             dolor aliquam faucibus odio tempus nibh.
                         </p>
-
                         <div class="p-section-hero__actions">
                             <a class="c-button c-button--primary" href="#about">
                                 <span class="c-button__text">
                                     Learn About Me
                                 </span>
                             </a>
-
                             <a class="c-button c-button--outline" href="#patient-stories">
                                 <span class="c-button__text">
                                     Patient Success Story
@@ -115,27 +107,27 @@
                             </a>
                         </div>
                     </div>
-
                     <div class="p-section-hero__media">
-                        <img class="p-section-hero__image" src="./assets/images/hero-doctor.png"
-                            alt="ralph-edwards-doctor" width="648" height="800" loading="eager">
+                        <div class="p-section-hero__image">
+                            <img alt="ralph-edwards-doctor" height="800" loading="eager"
+                                src="./assets/images/hero-doctor.png" width="648">
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section class="p-section-profile" id="about">
                 <div class="wrapper">
                     <div class="p-section-profile__card">
-                        <div class="p-section-profile__media">
-                            <img class="p-section-profile__image" src="./assets/images/profile-doctor.png"
-                                alt="ralph-edwards-profile" width="200" height="272" loading="lazy">
-                        </div>
-
+                        
+                            <div class="p-section-profile__image">
+                                <img alt="ralph-edwards-profile" height="272" loading="lazy"
+                                    src="./assets/images/profile-doctor.png" width="200">
+                            </div>
+                        
                         <div class="p-section-profile__content">
                             <h2 class="p-section-profile__title">
-                                Hello, I’m Ralph Edwards.
+                                Hello, I&rsquo;m Ralph Edwards.
                             </h2>
-
                             <p class="p-section-profile__description">
                                 Phasellus blandit, metus sit amet euismod
                                 facilisis, ante justo mollis elit, eu suscipit
@@ -143,89 +135,83 @@
                                 tempus nibh fringilla tincidunt. Proin luctus
                                 dui odio, sed egestas erat condimentum non.
                             </p>
-
                             <div class="p-section-profile__actions">
                                 <a class="c-button c-button--primary" href="#contact">
                                     <span class="c-button__text">
                                         Send Message
                                     </span>
-
-                                    <img class="c-button__icon" src="./assets/icons/icon-arrow-right.svg"
-                                        alt="icon-arrow-right" width="24" height="24" loading="lazy">
+                                    <div class="c-button__icon">
+                                        <img alt="icon-arrow-right" height="24" loading="lazy"
+                                            src="./assets/icons/icon-arrow-right.svg" width="24">
+                                    </div>
                                 </a>
-
                                 <a class="c-button c-button--outline" href="#cv">
-                                    <img class="c-button__icon" src="./assets/icons/icon-download.svg"
-                                        alt="icon-download" width="24" height="24" loading="lazy">
-
+                                    <div class="c-button__icon">
+                                        <img alt="icon-download" height="24" loading="lazy"
+                                            src="./assets/icons/icon-download.svg" width="24">
+                                    </div>
                                     <span class="c-button__text">
                                         Download Cv
                                     </span>
                                 </a>
                             </div>
                         </div>
-
-                        <aside class="p-section-profile__featured">
+                        <div class="p-section-profile__featured">
                             <p class="p-section-profile__featured-label">
                                 Featured By:
                             </p>
-
                             <ul class="p-section-profile__featured-list">
                                 <li class="p-section-profile__featured-item">
-                                    <img class="p-section-profile__featured-logo"
-                                        src="./assets/images/logo-boston-childrens.svg"
-                                        alt="boston-childrens-hospital-logo" width="108" height="64" loading="lazy">
+                                    <div class="p-section-profile__featured-logo">
+                                        <img alt="boston-childrens-hospital-logo" height="64" loading="lazy"
+                                            src="./assets/images/logo-boston-childrens.svg" width="108">
+                                    </div>
                                 </li>
-
                                 <li class="p-section-profile__featured-item">
-                                    <img class="p-section-profile__featured-logo"
-                                        src="./assets/images/logo-cincinnati-childrens.svg"
-                                        alt="cincinnati-childrens-hospital-logo" width="108" height="64" loading="lazy">
+                                    <div class="p-section-profile__featured-logo">
+                                        <img alt="cincinnati-childrens-hospital-logo" height="64" loading="lazy"
+                                            src="./assets/images/logo-cincinnati-childrens.svg" width="108">
+                                    </div>
                                 </li>
-
                                 <li class="p-section-profile__featured-item">
-                                    <img class="p-section-profile__featured-logo"
-                                        src="./assets/images/logo-florida-hospital.svg" alt="florida-hospital-logo"
-                                        width="108" height="64" loading="lazy">
+                                    <div class="p-section-profile__featured-logo">
+                                        <img alt="florida-hospital-logo" height="64" loading="lazy"
+                                            src="./assets/images/logo-florida-hospital.svg" width="108">
+                                    </div>
                                 </li>
                             </ul>
-                        </aside>
+                        </div>
                     </div>
                 </div>
             </section>
-
             <section class="p-section-history" id="education">
                 <div class="wrapper">
                     <div class="p-section-history__heading">
                         <h2 class="p-section-history__title">
                             My Working History
                         </h2>
-
                         <p class="p-section-history__description">
                             Lorem ipsum dolor sit amet, consectetur adipiscing
                             elit. Maecenas dapibus leo vel augue suscipit
                             bibendum.
                         </p>
                     </div>
-
                     <ul class="p-section-history__list">
                         <li class="p-section-history__item">
                             <article class="p-section-history__card">
                                 <div class="p-section-history__media">
-                                    <img class="p-section-history__image"
-                                        src="./assets/images/singapore-general-hospital.png"
-                                        alt="singapore-general-hospital" width="400" height="250" loading="lazy">
+                                    <div class="p-section-history__image">
+                                        <img alt="singapore-general-hospital" height="250" loading="lazy"
+                                            src="./assets/images/singapore-general-hospital.png" width="400">
+                                    </div>
                                 </div>
-
                                 <div class="p-section-history__content">
                                     <p class="p-section-history__period is-current">
                                         Currently Working
                                     </p>
-
                                     <h3 class="p-section-history__card-title">
                                         Singapore General Hospital
                                     </h3>
-
                                     <p class="p-section-history__card-description">
                                         Donec ut imperdiet augue, ac rhoncus
                                         arcu. In ac mauris commodo, ultrices
@@ -234,24 +220,21 @@
                                 </div>
                             </article>
                         </li>
-
                         <li class="p-section-history__item">
                             <article class="p-section-history__card">
                                 <div class="p-section-history__media">
-                                    <img class="p-section-history__image"
-                                        src="./assets/images/university-of-tokyo-hospital.png"
-                                        alt="university-of-tokyo-hospital" width="400" height="250" loading="lazy">
+                                    <div class="p-section-history__image">
+                                        <img alt="university-of-tokyo-hospital" height="250" loading="lazy"
+                                            src="./assets/images/university-of-tokyo-hospital.png" width="400">
+                                    </div>
                                 </div>
-
                                 <div class="p-section-history__content">
                                     <p class="p-section-history__period">
                                         Jan, 2019 to March, 2021
                                     </p>
-
                                     <h3 class="p-section-history__card-title">
                                         University of Tokyo Hospital
                                     </h3>
-
                                     <p class="p-section-history__card-description">
                                         Donec ut imperdiet augue, ac rhoncus
                                         arcu. In ac mauris commodo, ultrices
@@ -260,24 +243,21 @@
                                 </div>
                             </article>
                         </li>
-
                         <li class="p-section-history__item">
                             <article class="p-section-history__card">
                                 <div class="p-section-history__media">
-                                    <img class="p-section-history__image"
-                                        src="./assets/images/johns-hopkins-hospital.png" alt="johns-hopkins-hospital"
-                                        width="400" height="250" loading="lazy">
+                                    <div class="p-section-history__image">
+                                        <img alt="johns-hopkins-hospital" height="250" loading="lazy"
+                                            src="./assets/images/johns-hopkins-hospital.png" width="400">
+                                    </div>
                                 </div>
-
                                 <div class="p-section-history__content">
                                     <p class="p-section-history__period">
                                         Mar, 2017 to Dec, 2018
                                     </p>
-
                                     <h3 class="p-section-history__card-title">
                                         Johns Hopkins Hospital
                                     </h3>
-
                                     <p class="p-section-history__card-description">
                                         Donec ut imperdiet augue, ac rhoncus
                                         arcu. In ac mauris commodo, ultrices
@@ -287,18 +267,20 @@
                             </article>
                         </li>
                     </ul>
-
                     <div class="p-section-history__navigation">
-                        <button class="p-section-history__nav p-section-history__nav--prev" type="button"
-                            aria-label="Previous working history">
-                            <img class="p-section-history__nav-icon" src="./assets/icons/icon-arrow-right.svg"
-                                alt="icon-arrow-right" width="20" height="20" loading="lazy">
+                        <button aria-label="Previous working history"
+                            class="p-section-history__nav p-section-history__nav--prev" type="button">
+                            <span class="p-section-history__nav-icon">
+                                <img alt="icon-arrow-right" height="20" loading="lazy"
+                                    src="./assets/icons/icon-arrow-right.svg" width="20">
+                            </span>
                         </button>
-
-                        <button class="p-section-history__nav p-section-history__nav--next" type="button"
-                            aria-label="Next working history">
-                            <img class="p-section-history__nav-icon" src="./assets/icons/icon-arrow-right.svg"
-                                alt="icon-arrow-right" width="20" height="20" loading="lazy">
+                        <button aria-label="Next working history"
+                            class="p-section-history__nav p-section-history__nav--next" type="button">
+                            <span class="p-section-history__nav-icon">
+                                <img alt="icon-arrow-right" height="20" loading="lazy"
+                                    src="./assets/icons/icon-arrow-right.svg" width="20">
+                            </span>
                         </button>
                     </div>
                 </div>
@@ -311,9 +293,9 @@
                         </h2>
                         <blockquote class="p-section-testimonial__quote">
                             <p class="p-section-testimonial__quote-text">
-                                “Life is unpredictable, not everything’s in our
+                                &ldquo;Life is unpredictable, not everything&rsquo;s in our
                                 control. But as long as you with the right people
-                                you can handle anything.”
+                                you can handle anything.&rdquo;
                             </p>
                         </blockquote>
                         <div class="p-section-testimonial__footer">
@@ -325,29 +307,28 @@
                                     Psychiatrist Doctor
                                 </p>
                             </div>
-                            <div class="p-section-testimonial__pagination" role="group"
-                                aria-label="Testimonial pagination">
-                                <button class="p-section-testimonial__pagination-button" type="button"
-                                    aria-label="Show testimonial 1">
+                            <div aria-label="Testimonial pagination" class="p-section-testimonial__pagination"
+                                role="group">
+                                <button aria-label="Show testimonial 1" class="p-section-testimonial__pagination-button"
+                                    type="button">
                                 </button>
-
-                                <button class="p-section-testimonial__pagination-button is-active" type="button"
-                                    aria-label="Show testimonial 2" aria-current="true">
+                                <button aria-current="true" aria-label="Show testimonial 2"
+                                    class="p-section-testimonial__pagination-button is-active" type="button">
                                 </button>
-
-                                <button class="p-section-testimonial__pagination-button" type="button"
-                                    aria-label="Show testimonial 3">
+                                <button aria-label="Show testimonial 3" class="p-section-testimonial__pagination-button"
+                                    type="button">
                                 </button>
-
-                                <button class="p-section-testimonial__pagination-button" type="button"
-                                    aria-label="Show testimonial 4">
+                                <button aria-label="Show testimonial 4" class="p-section-testimonial__pagination-button"
+                                    type="button">
                                 </button>
                             </div>
                         </div>
                     </div>
                     <div class="p-section-testimonial__media">
-                        <img class="p-section-testimonial__image" src="./assets/images/testimonial-medical-team.png"
-                            alt="testimonial-medical-team" width="590" height="538" loading="lazy">
+                        <div class="p-section-testimonial__image">
+                            <img alt="testimonial-medical-team" height="538" loading="lazy"
+                                src="./assets/images/testimonial-medical-team.png" width="590">
+                        </div>
                     </div>
                 </div>
             </section>
@@ -357,13 +338,11 @@
                         <h2 class="p-section-qualification__title">
                             My Qualification &amp; Awards
                         </h2>
-
                         <p class="p-section-qualification__description">
                             Mauris porttitor eleifend odio, id venenatis orci ornare ac.
                             Nullam id convallis nisl. Sed ullamcorper lacinia suscipit.
                         </p>
                     </div>
-
                     <div class="p-section-qualification__content">
                         <ul class="p-section-qualification__education-list">
                             <li class="p-section-qualification__education-item">
@@ -371,19 +350,16 @@
                                     <p class="p-section-qualification__school">
                                         Oxford University
                                     </p>
-
                                     <p class="p-section-qualification__period">
                                         Jan, 2016 to Jan, 2021
                                     </p>
                                 </div>
-
                                 <div class="p-section-qualification__education-content">
                                     <h3 class="p-section-qualification__degree">
                                         Bachelor of Medicine &amp; Bachelor
                                         <br>
                                         of Surgery (MBBS)
                                     </h3>
-
                                     <p class="p-section-qualification__education-description">
                                         Donec ut imperdiet augue, ac rhoncus arcu.
                                         In ac mauris commodo, ultrices felis vitae,
@@ -391,23 +367,19 @@
                                     </p>
                                 </div>
                             </li>
-
                             <li class="p-section-qualification__education-item">
                                 <div class="p-section-qualification__education-meta">
                                     <p class="p-section-qualification__school">
                                         Oxford University
                                     </p>
-
                                     <p class="p-section-qualification__period">
                                         Jan, 2016 to Jan, 2021
                                     </p>
                                 </div>
-
                                 <div class="p-section-qualification__education-content">
                                     <h3 class="p-section-qualification__degree">
                                         Bachelor of Social Science
                                     </h3>
-
                                     <p class="p-section-qualification__education-description">
                                         Integer vel nulla condimentum, tempor risus
                                         eu, blandit urna. Quisque fringilla ex in
@@ -415,48 +387,40 @@
                                     </p>
                                 </div>
                             </li>
-
                             <li class="p-section-qualification__education-item">
                                 <div class="p-section-qualification__education-meta">
                                     <p class="p-section-qualification__school">
                                         Oxford University
                                     </p>
-
                                     <p class="p-section-qualification__period">
                                         Jan, 2016 to Jan, 2021
                                     </p>
                                 </div>
-
                                 <div class="p-section-qualification__education-content">
                                     <h3 class="p-section-qualification__degree">
                                         Bachelor of Science and
                                         <br>
                                         Engineering
                                     </h3>
-
                                     <p class="p-section-qualification__education-description">
                                         Proin varius diam vitae neque ornare
                                         ullamcorper.
                                     </p>
                                 </div>
                             </li>
-
                             <li class="p-section-qualification__education-item">
                                 <div class="p-section-qualification__education-meta">
                                     <p class="p-section-qualification__school">
                                         University of Cambridge
                                     </p>
-
                                     <p class="p-section-qualification__period">
                                         Jan, 2016 to Jan, 2021
                                     </p>
                                 </div>
-
                                 <div class="p-section-qualification__education-content">
                                     <h3 class="p-section-qualification__degree">
                                         Bachelor of Communication
                                     </h3>
-
                                     <p class="p-section-qualification__education-description">
                                         Proin varius diam vitae neque ornare
                                         ullamcorper. Maecenas vehicula sem eu dui
@@ -465,74 +429,57 @@
                                 </div>
                             </li>
                         </ul>
-
                         <ul class="p-section-qualification__award-list">
-                            <li class="
-                        p-section-qualification__award-item
-                        p-section-qualification__award-item--lasker
-                    ">
+                            <li class="p-section-qualification__award-item p-section-qualification__award-item--lasker">
                                 <article class="p-section-qualification__award-card">
                                     <span class="p-section-qualification__award-number">
                                         01
                                     </span>
-
-                                    <img class="p-section-qualification__award-image"
-                                        src="./assets/images/award-lasker.png" alt="award-lasker" width="164"
-                                        height="164" loading="lazy">
-
+                                    <div class="p-section-qualification__award-image">
+                                        <img alt="award-lasker" height="164" loading="lazy"
+                                            src="./assets/images/award-lasker.png" width="164">
+                                    </div>
                                     <h3 class="p-section-qualification__award-title">
                                         Lasker Award
                                     </h3>
-
                                     <p class="p-section-qualification__award-description">
                                         Donec ut imperdiet augue, ac rhoncus arcu.
                                         In ac mauris commodo.
                                     </p>
                                 </article>
                             </li>
-
-                            <li class="
-                        p-section-qualification__award-item
-                        p-section-qualification__award-item--howland
-                    ">
+                            <li
+                                class="p-section-qualification__award-item p-section-qualification__award-item--howland">
                                 <article class="p-section-qualification__award-card">
                                     <span class="p-section-qualification__award-number">
                                         02
                                     </span>
-
-                                    <img class="p-section-qualification__award-image"
-                                        src="./assets/images/award-john-howland.png" alt="award-john-howland"
-                                        width="164" height="164" loading="lazy">
-
+                                    <div class="p-section-qualification__award-image">
+                                        <img alt="award-john-howland" height="164" loading="lazy"
+                                            src="./assets/images/award-john-howland.png" width="164">
+                                    </div>
                                     <h3 class="p-section-qualification__award-title">
                                         John Howland Award
                                     </h3>
-
                                     <p class="p-section-qualification__award-description">
                                         Donec ut imperdiet augue, ac rhoncus arcu.
                                         In ac mauris commodo.
                                     </p>
                                 </article>
                             </li>
-
-                            <li class="
-                        p-section-qualification__award-item
-                        p-section-qualification__award-item--maxwell
-                        p-section-qualification__award-item--featured
-                    ">
+                            <li
+                                class="p-section-qualification__award-item p-section-qualification__award-item--maxwell p-section-qualification__award-item--featured">
                                 <article class="p-section-qualification__award-card">
                                     <span class="p-section-qualification__award-number">
                                         03
                                     </span>
-
-                                    <img class="p-section-qualification__award-image"
-                                        src="./assets/images/award-maxwell-finland.png" alt="award-maxwell-finland"
-                                        width="164" height="164" loading="lazy">
-
+                                    <div class="p-section-qualification__award-image">
+                                        <img alt="award-maxwell-finland" height="164" loading="lazy"
+                                            src="./assets/images/award-maxwell-finland.png" width="164">
+                                    </div>
                                     <h3 class="p-section-qualification__award-title">
                                         Maxwell Finland Award
                                     </h3>
-
                                     <p class="p-section-qualification__award-description">
                                         Donec ut imperdiet augue, ac rhoncus arcu.
                                         In ac mauris commodo.
@@ -546,70 +493,64 @@
             <section class="p-section-sensitive-person" id="article">
                 <div class="wrapper">
                     <div class="p-section-sensitive-person__media">
-                        <img class="p-section-sensitive-person__image" src="./assets/images/sensitive-person-books.png"
-                            alt="the-highly-sensitive-person-books" width="972" height="602" loading="lazy">
+                        <div class="p-section-sensitive-person__image">
+                            <img alt="the-highly-sensitive-person-books" height="602" loading="lazy"
+                                src="./assets/images/sensitive-person-books.png" width="972">
+                        </div>
                     </div>
-
                     <div class="p-section-sensitive-person__content">
                         <h2 class="p-section-sensitive-person__title">
                             The Highly Sensitive Person
                         </h2>
-
                         <p class="p-section-sensitive-person__description">
                             Are you easily overwhelmed by such things as bright
                             lights, strong smells, coarse fabrics, or sirens
                             nearby?
                         </p>
-
                         <div class="p-section-sensitive-person__author">
-                            <img class="p-section-sensitive-person__author-image"
-                                src="./assets/images/author-kevin-gilbert.png" alt="author-kevin-gilbert" width="50"
-                                height="50" loading="lazy">
-
+                            <div class="p-section-sensitive-person__author-image">
+                                <img alt="author-kevin-gilbert" height="50" loading="lazy"
+                                    src="./assets/images/author-kevin-gilbert.png" width="50">
+                            </div>
                             <div class="p-section-sensitive-person__author-content">
                                 <p class="p-section-sensitive-person__author-label">
                                     Writen By:
                                 </p>
-
                                 <p class="p-section-sensitive-person__author-name">
                                     Kevin Gilbert
                                 </p>
                             </div>
                         </div>
-
                         <ul class="p-section-sensitive-person__list">
                             <li class="p-section-sensitive-person__item">
                                 <div class="p-section-sensitive-person__item-heading">
-                                    <img class="p-section-sensitive-person__item-icon"
-                                        src="./assets/icons/icon-check-circle.svg" alt="icon-check-circle" width="24"
-                                        height="24" loading="lazy">
-
+                                    <div class="p-section-sensitive-person__item-icon">
+                                        <img alt="icon-check-circle" height="24" loading="lazy"
+                                            src="./assets/icons/icon-check-circle.svg" width="24">
+                                    </div>
                                     <h3 class="p-section-sensitive-person__item-title">
                                         Your trait is normal.
                                     </h3>
                                 </div>
-
                                 <p class="p-section-sensitive-person__item-description">
                                     Do you make it a high priority to arrange your
                                     life to avoid upsetting or overwhelming
                                     situations?
                                 </p>
                             </li>
-
                             <li class="p-section-sensitive-person__item">
                                 <div class="p-section-sensitive-person__item-heading">
-                                    <img class="p-section-sensitive-person__item-icon"
-                                        src="./assets/icons/icon-check-circle.svg" alt="icon-check-circle" width="24"
-                                        height="24" loading="lazy">
-
+                                    <div class="p-section-sensitive-person__item-icon">
+                                        <img alt="icon-check-circle" height="24" loading="lazy"
+                                            src="./assets/icons/icon-check-circle.svg" width="24">
+                                    </div>
                                     <h3 class="p-section-sensitive-person__item-title">
                                         You are also more easily overwhelmed.
                                     </h3>
                                 </div>
-
                                 <p class="p-section-sensitive-person__item-description">
                                     If you find you are highly sensitive, or your
-                                    child is, I’d like you to know the following:
+                                    child is, I&rsquo;d like you to know the following:
                                 </p>
                             </li>
                         </ul>
@@ -624,59 +565,53 @@
                             <br>
                             Success Stories
                         </h2>
-
                         <p class="p-section-patient-stories__description">
                             Mauris porttitor eleifend odio, id venenatis
                             orci ornare ac nullam id convallis nisl.
                         </p>
-
                         <div class="p-section-patient-stories__controls">
                             <div class="p-section-patient-stories__navigation">
-                                <button class="p-section-patient-stories__nav p-section-patient-stories__nav--prev"
-                                    type="button" aria-label="Previous patient story">
-                                    <img class="p-section-patient-stories__nav-icon"
-                                        src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
-                                        height="20" loading="lazy">
+                                <button aria-label="Previous patient story"
+                                    class="p-section-patient-stories__nav p-section-patient-stories__nav--prev"
+                                    type="button">
+                                    <span class="p-section-patient-stories__nav-icon">
+                                        <img alt="icon-arrow-right" height="20" loading="lazy"
+                                            src="./assets/icons/icon-arrow-right.svg" width="20">
+                                    </span>
                                 </button>
-
-                                <button class="p-section-patient-stories__nav p-section-patient-stories__nav--next"
-                                    type="button" aria-label="Next patient story">
-                                    <img class="p-section-patient-stories__nav-icon"
-                                        src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
-                                        height="20" loading="lazy">
+                                <button aria-label="Next patient story"
+                                    class="p-section-patient-stories__nav p-section-patient-stories__nav--next"
+                                    type="button">
+                                    <span class="p-section-patient-stories__nav-icon">
+                                        <img alt="icon-arrow-right" height="20" loading="lazy"
+                                            src="./assets/icons/icon-arrow-right.svg" width="20">
+                                    </span>
                                 </button>
                             </div>
-
-                            <div class="p-section-patient-stories__pagination" role="group"
-                                aria-label="Patient stories pagination">
-                                <button class="p-section-patient-stories__pagination-button" type="button"
-                                    aria-label="Show patient story 1">
+                            <div aria-label="Patient stories pagination" class="p-section-patient-stories__pagination"
+                                role="group">
+                                <button aria-label="Show patient story 1"
+                                    class="p-section-patient-stories__pagination-button" type="button">
                                 </button>
-
-                                <button class="p-section-patient-stories__pagination-button is-active" type="button"
-                                    aria-label="Show patient story 2" aria-current="true">
+                                <button aria-current="true" aria-label="Show patient story 2"
+                                    class="p-section-patient-stories__pagination-button is-active" type="button">
                                 </button>
-
-                                <button class="p-section-patient-stories__pagination-button" type="button"
-                                    aria-label="Show patient story 3">
+                                <button aria-label="Show patient story 3"
+                                    class="p-section-patient-stories__pagination-button" type="button">
                                 </button>
-
-                                <button class="p-section-patient-stories__pagination-button" type="button"
-                                    aria-label="Show patient story 4">
+                                <button aria-label="Show patient story 4"
+                                    class="p-section-patient-stories__pagination-button" type="button">
                                 </button>
-
-                                <button class="p-section-patient-stories__pagination-button" type="button"
-                                    aria-label="Show patient story 5">
+                                <button aria-label="Show patient story 5"
+                                    class="p-section-patient-stories__pagination-button" type="button">
                                 </button>
                             </div>
                         </div>
                     </div>
-
                     <blockquote class="p-section-patient-stories__quote">
                         <span class="p-section-patient-stories__quote-mark">
-                            ”
+                            &rdquo;
                         </span>
-
                         <p class="p-section-patient-stories__quote-text">
                             When a military doctor tracks down his former
                             fiancee's kidnapped niece, he discovers a complex
@@ -693,60 +628,57 @@
                             <h2 class="p-section-latest-event-show__title">
                                 Latest Event &amp; Show
                             </h2>
-
                             <p class="p-section-latest-event-show__description">
                                 Donec suscipit dictum risus sed dignissim. Fusce ex
                                 leo, lobortis sed ullamcorper in, rutrum eu enim.
                             </p>
                         </div>
-
                         <div class="p-section-latest-event-show__navigation">
-                            <button class="p-section-latest-event-show__nav p-section-latest-event-show__nav--prev"
-                                type="button" aria-label="Previous event">
-                                <img class="p-section-latest-event-show__nav-icon"
-                                    src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
-                                    height="20" loading="lazy">
+                            <button aria-label="Previous event"
+                                class="p-section-latest-event-show__nav p-section-latest-event-show__nav--prev"
+                                type="button">
+                                <span class="p-section-latest-event-show__nav-icon">
+                                    <img alt="icon-arrow-right" height="20" loading="lazy"
+                                        src="./assets/icons/icon-arrow-right.svg" width="20">
+                                </span>
                             </button>
-
-                            <button class="p-section-latest-event-show__nav p-section-latest-event-show__nav--next"
-                                type="button" aria-label="Next event">
-                                <img class="p-section-latest-event-show__nav-icon"
-                                    src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right" width="20"
-                                    height="20" loading="lazy">
+                            <button aria-label="Next event"
+                                class="p-section-latest-event-show__nav p-section-latest-event-show__nav--next"
+                                type="button">
+                                <span class="p-section-latest-event-show__nav-icon">
+                                    <img alt="icon-arrow-right" height="20" loading="lazy"
+                                        src="./assets/icons/icon-arrow-right.svg" width="20">
+                                </span>
                             </button>
                         </div>
                     </div>
-
                     <div class="swiper p-section-latest-event-show__slider">
                         <ul class="swiper-wrapper p-section-latest-event-show__list">
                             <li class="swiper-slide p-section-latest-event-show__item">
                                 <article class="p-section-latest-event-show__card">
                                     <div class="p-section-latest-event-show__meta">
                                         <div class="p-section-latest-event-show__meta-item">
-                                            <img class="p-section-latest-event-show__meta-icon"
-                                                src="./assets/icons/icon-calendar.svg" alt="icon-calendar" width="20"
-                                                height="20" loading="lazy">
-
+                                            <div class="p-section-latest-event-show__meta-icon">
+                                                <img alt="icon-calendar" height="20" loading="lazy"
+                                                    src="./assets/icons/icon-calendar.svg" width="20">
+                                            </div>
                                             <time class="p-section-latest-event-show__meta-text" datetime="2020-09-08">
                                                 8 Sep,2020
                                             </time>
                                         </div>
-
                                         <div class="p-section-latest-event-show__meta-item">
-                                            <img class="p-section-latest-event-show__meta-icon"
-                                                src="./assets/icons/icon-comment.svg" alt="icon-comment" width="20"
-                                                height="20" loading="lazy">
-
+                                            <div class="p-section-latest-event-show__meta-icon">
+                                                <img alt="icon-comment" height="20" loading="lazy"
+                                                    src="./assets/icons/icon-comment.svg" width="20">
+                                            </div>
                                             <span class="p-section-latest-event-show__meta-text">
                                                 125 Comments
                                             </span>
                                         </div>
                                     </div>
-
                                     <h3 class="p-section-latest-event-show__card-title">
                                         BMA Events
                                     </h3>
-
                                     <p class="p-section-latest-event-show__card-description">
                                         Quisque vitae ante dolor. Duis vehicula purus
                                         eget libero interdum ornare. Vestibulum ut risus
@@ -756,35 +688,31 @@
                                     </p>
                                 </article>
                             </li>
-
                             <li class="swiper-slide p-section-latest-event-show__item">
                                 <article class="p-section-latest-event-show__card">
                                     <div class="p-section-latest-event-show__meta">
                                         <div class="p-section-latest-event-show__meta-item">
-                                            <img class="p-section-latest-event-show__meta-icon"
-                                                src="./assets/icons/icon-calendar.svg" alt="icon-calendar" width="20"
-                                                height="20" loading="lazy">
-
+                                            <div class="p-section-latest-event-show__meta-icon">
+                                                <img alt="icon-calendar" height="20" loading="lazy"
+                                                    src="./assets/icons/icon-calendar.svg" width="20">
+                                            </div>
                                             <time class="p-section-latest-event-show__meta-text" datetime="2020-09-08">
                                                 8 Sep,2020
                                             </time>
                                         </div>
-
                                         <div class="p-section-latest-event-show__meta-item">
-                                            <img class="p-section-latest-event-show__meta-icon"
-                                                src="./assets/icons/icon-comment.svg" alt="icon-comment" width="20"
-                                                height="20" loading="lazy">
-
+                                            <div class="p-section-latest-event-show__meta-icon">
+                                                <img alt="icon-comment" height="20" loading="lazy"
+                                                    src="./assets/icons/icon-comment.svg" width="20">
+                                            </div>
                                             <span class="p-section-latest-event-show__meta-text">
                                                 125 Comments
                                             </span>
                                         </div>
                                     </div>
-
                                     <h3 class="p-section-latest-event-show__card-title">
                                         CESR seminar for SAS grade doctors
                                     </h3>
-
                                     <p class="p-section-latest-event-show__card-description">
                                         Quisque vitae ante dolor. Duis vehicula purus
                                         eget libero interdum ornare. Vestibulum ut risus
@@ -796,90 +724,78 @@
                             </li>
                         </ul>
                     </div>
-
                     <div class="swiper-pagination p-section-latest-event-show__pagination">
                     </div>
                 </div>
             </section>
         </main>
-
         <footer class="l-footer" id="contact">
             <div class="wrapper">
                 <div class="l-footer__contact">
-                    <h2 class="l-footer__contact-title">
+                    <p class="l-footer__contact-title">
                         Looking for a Neurologists
                         <br>
                         Doctor? Get in touch and
                         <br>
                         let's chat!
-                    </h2>
-
+                    </p>
                     <div class="l-footer__contact-content">
                         <p class="l-footer__contact-description">
                             Donec in bibendum risus. Cras eget imperdiet
                             sapien. Donec sollicitudin maximus augue,
                             non elementum quam ultrices non.
                         </p>
-
                         <a class="c-button c-button--primary l-footer__contact-button" href="#contact">
                             <span class="c-button__text">
                                 Get In Touch
                             </span>
-
-                            <img class="c-button__icon" src="./assets/icons/icon-arrow-right.svg" alt="icon-arrow-right"
-                                width="24" height="24" loading="lazy">
+                            <div class="c-button__icon">
+                                <img alt="icon-arrow-right" height="24" loading="lazy"
+                                    src="./assets/icons/icon-arrow-right.svg" width="24">
+                            </div>
                         </a>
                     </div>
                 </div>
-
                 <div class="l-footer__main">
                     <a class="l-footer__logo" href="./index.html">
-                        <img class="l-footer__logo-image" src="./assets/images/logo-footer.svg" alt="logo" width="200"
-                            height="92" loading="lazy">
+                        <img alt="logo" class="l-footer__logo-image" height="92" loading="lazy"
+                            src="./assets/images/logo-footer.svg" width="200">
                     </a>
-
                     <div class="l-footer__column">
-                        <h3 class="l-footer__column-title">
+                        <p class="l-footer__column-title">
                             Location
-                        </h3>
-
+                        </p>
                         <address class="l-footer__address">
                             4517 Washington Ave.
                             <br>
                             Manchester, Kentucky 39495
                         </address>
                     </div>
-
-                    <nav class="l-footer__nav" aria-label="Footer navigation">
-                        <h3 class="l-footer__column-title">
+                    <nav aria-label="Footer navigation" class="l-footer__nav">
+                        <p class="l-footer__column-title">
                             Quick Links
-                        </h3>
-
+                        </p>
                         <ul class="l-footer__nav-list">
                             <li class="l-footer__nav-item">
                                 <a class="l-footer__nav-link" href="#about">
                                     About
                                 </a>
                             </li>
-
                             <li class="l-footer__nav-item">
                                 <a class="l-footer__nav-link" href="#cv">
                                     CV
                                 </a>
                             </li>
-
                             <li class="l-footer__nav-item">
                                 <a class="l-footer__nav-link" href="#latest-event">
                                     Events
                                 </a>
                             </li>
-
                             <li class="l-footer__nav-item">
                                 <a class="l-footer__nav-link" href="#article">
                                     Article
                                 </a>
                             </li>
-
                             <li class="l-footer__nav-item">
                                 <a class="l-footer__nav-link" href="#contact">
                                     Contact
@@ -887,96 +803,95 @@
                             </li>
                         </ul>
                     </nav>
-
                     <div class="l-footer__social">
-                        <h3 class="l-footer__column-title">
+                        <p class="l-footer__column-title">
                             Follow Me
-                        </h3>
-
+                        </p>
                         <ul class="l-footer__social-list">
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="Facebook">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-facebook.svg" alt="icon-facebook" width="20"
-                                        height="20" loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-facebook-hover.svg" alt="icon-facebook-hover"
-                                        width="20" height="20" loading="lazy">
+                                <a aria-label="Facebook" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-facebook" height="20" loading="lazy"
+                                            src="./assets/icons/icon-facebook.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-facebook-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-facebook-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
-
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="Twitter">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-twitter.svg" alt="icon-twitter" width="20" height="20"
-                                        loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-twitter-hover.svg" alt="icon-twitter-hover" width="20"
-                                        height="20" loading="lazy">
+                                <a aria-label="Twitter" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-twitter" height="20" loading="lazy"
+                                            src="./assets/icons/icon-twitter.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-twitter-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-twitter-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
-
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="LinkedIn">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-linkedin.svg" alt="icon-linkedin" width="20"
-                                        height="20" loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-linkedin-hover.svg" alt="icon-linkedin-hover"
-                                        width="20" height="20" loading="lazy">
+                                <a aria-label="LinkedIn" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-linkedin" height="20" loading="lazy"
+                                            src="./assets/icons/icon-linkedin.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-linkedin-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-linkedin-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
-
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="Instagram">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-instagram.svg" alt="icon-instagram" width="20"
-                                        height="20" loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-instagram-hover.svg" alt="icon-instagram-hover"
-                                        width="20" height="20" loading="lazy">
+                                <a aria-label="Instagram" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-instagram" height="20" loading="lazy"
+                                            src="./assets/icons/icon-instagram.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-instagram-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-instagram-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
-
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="WhatsApp">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-whatsapp.svg" alt="icon-whatsapp" width="20"
-                                        height="20" loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-whatsapp-hover.svg" alt="icon-whatsapp-hover"
-                                        width="20" height="20" loading="lazy">
+                                <a aria-label="WhatsApp" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-whatsapp" height="20" loading="lazy"
+                                            src="./assets/icons/icon-whatsapp.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-whatsapp-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-whatsapp-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
-
                             <li class="l-footer__social-item">
-                                <a class="l-footer__social-link" href="#" aria-label="Video channel">
-                                    <img class="l-footer__social-icon l-footer__social-icon--default"
-                                        src="./assets/icons/icon-video.svg" alt="icon-video" width="20" height="20"
-                                        loading="lazy">
-
-                                    <img class="l-footer__social-icon l-footer__social-icon--hover"
-                                        src="./assets/icons/icon-video-hover.svg" alt="icon-video-hover" width="20"
-                                        height="20" loading="lazy">
+                                <a aria-label="Video channel" class="l-footer__social-link" href="#">
+                                    <div class="l-footer__social-icon l-footer__social-icon--default">
+                                        <img alt="icon-video" height="20" loading="lazy"
+                                            src="./assets/icons/icon-video.svg" width="20">
+                                    </div>
+                                    <div class="l-footer__social-icon l-footer__social-icon--hover">
+                                        <img alt="icon-video-hover" height="20" loading="lazy"
+                                            src="./assets/icons/icon-video-hover.svg" width="20">
+                                    </div>
                                 </a>
                             </li>
                         </ul>
                     </div>
                 </div>
-
                 <p class="l-footer__copyright">
-                    All content © 2006-Current Winston Potter and respective
+                    All content &copy; 2006-Current Winston Potter and respective
                     copyright holders.
                 </p>
             </div>
         </footer>
     </div>
-    <script src="./js/main.js"></script>
+    <script src="./js/main.js">
+    </script>
 </body>
 
 </html>

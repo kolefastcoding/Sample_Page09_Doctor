@@ -129,31 +129,10 @@
 }
 
 
-.l-header__menu-icon>img,
-.c-button__icon>img,
-.p-section-hero__image>img,
-.p-section-profile__image>img,
-.p-section-profile__featured-logo>img,
-.p-section-history__image>img,
-.p-section-history__nav-icon>img,
-.p-section-testimonial__image>img,
-.p-section-qualification__award-image>img,
-.p-section-sensitive-person__image>img,
-.p-section-sensitive-person__author-image>img,
-.p-section-sensitive-person__item-icon>img,
-.p-section-patient-stories__nav-icon>img,
-.p-section-latest-event-show__nav-icon>img,
-.p-section-latest-event-show__meta-icon>img,
-.l-footer__social-icon>img {
-    display: block;
-    max-width: 100%;
-    max-height: 100%;
-}
-
 
 .p-section-hero {
     width: 1920px;
-    min-height: 975px;
+    min-height: 957px;
     position: relative;
     background-color: var(--color-hero-background);
 }
@@ -237,13 +216,10 @@
 }
 
 .p-section-profile__card {
-    display: grid;
-    grid-template-columns:
-        160px minmax(0, 1fr) 330px;
-    gap: 40px;
+    display: flex;
     align-items: center;
     min-height: 320px;
-    padding: 48px 50px;
+    padding: 65px 39px;
     background-color: var(--color-white);
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow-profile);
@@ -253,13 +229,13 @@
 .p-section-profile__image {
     width: 200px;
     height: 272px;
-    margin-left: -12px;
+    margin-right: 40px;
 }
 
 .p-section-profile__content {
     max-width: 520px;
     height: 272px;
-    margin-left: 29px;
+    margin-right: 220px;
 
 }
 
@@ -281,8 +257,8 @@
 .p-section-profile__actions {
     display: flex;
     align-items: center;
-    gap: 14px;
-    margin-top: 25px;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .p-section-profile__featured {
@@ -292,6 +268,7 @@
     align-self: start;
     padding: 24px;
     border: 1px solid var(--color-border);
+
 }
 
 .p-section-profile__featured-label {
@@ -299,13 +276,14 @@
     font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
+    margin-bottom: 15px;
 }
 
 .p-section-profile__featured-list {
     display: flex;
     align-items: center;
     gap: 26px;
-    margin-top: 18px;
+    /* flex-wrap: wrap; */
 }
 
 .p-section-profile__featured-item {
@@ -340,12 +318,11 @@
     max-width: 620px;
     margin-inline: auto;
     text-align: center;
+    padding-top: 17px;
 }
 
 .p-section-history__title {
-    /* position: relative; */
-    margin-top: 33px;
-    padding-bottom: 22px;
+    padding-bottom: 48px;
     color: var(--color-heading);
     font-size: 48px;
     font-weight: bold;
@@ -366,30 +343,35 @@
 .p-section-history__description {
     text-align: center;
     width: 648px;
-    margin-top: 26px;
+    /* margin-top: 26px; */
     margin-left: -14px;
     color: var(--color-muted);
     font-size: 16px;
     line-height: 24px;
-}
-
-.p-section-history__list {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 18px;
-    margin-top: 43px;
-}
-
-.p-section-history__item {
-    min-width: 0;
+    margin-bottom: 51px;
 }
 
 .p-section-history__card {
-    height: 100%;
-    padding: 23px;
+    max-width: 1324px;
+    gap: 24px;
     background-color: var(--color-white);
-    border: 1px solid var(--color-border);
+
 }
+
+.p-section-history__list {
+    display: flex;
+    gap: 20px;
+
+}
+
+.p-section-history__item {
+    padding: 32px;
+    width: 424px;
+    border: 1px solid var(--color-border);
+    /* gap: 32px; */
+}
+
+
 
 .p-section-history__item:last-child .p-section-history__card {
     border-color: transparent;
@@ -397,23 +379,19 @@
 }
 
 .p-section-history__media {
-    overflow: hidden;
+    width: 360px;
+    height: 224px;
+    margin-bottom: 28px;
 }
 
-.p-section-history__image {
-    width: 100%;
-    overflow: hidden;
-    aspect-ratio: 8 / 5;
-}
 
 .p-section-history__content {
-    padding-top: 20px;
+    max-width: 360px;
 }
 
 .p-section-history__period {
-    color: var(--color-muted);
-    font-size: 10px;
-    line-height: 1.3;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .p-section-history__period.is-current {
@@ -425,16 +403,15 @@
 .p-section-history__card-title {
     margin-top: 9px;
     color: var(--color-heading);
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 1.3;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .p-section-history__card-description {
     margin-top: 15px;
     color: var(--color-text);
-    font-size: 10px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .p-section-history__navigation {
@@ -1420,32 +1397,4 @@
     font-size: 12px;
     line-height: 1.5;
     text-align: center;
-}
-
-
-
-.p-section-profile__image>img,
-.p-section-history__image>img,
-.p-section-testimonial__image>img,
-.p-section-sensitive-person__author-image>img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.p-section-hero__image>img,
-.p-section-profile__featured-logo>img,
-.p-section-qualification__award-image>img,
-.p-section-sensitive-person__image>img,
-.p-section-sensitive-person__item-icon>img,
-.p-section-history__nav-icon>img,
-.p-section-patient-stories__nav-icon>img,
-.p-section-latest-event-show__nav-icon>img,
-.p-section-latest-event-show__meta-icon>img,
-.l-header__menu-icon>img,
-.c-button__icon>img,
-.l-footer__social-icon>img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
 }

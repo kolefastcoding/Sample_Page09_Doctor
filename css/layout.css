@@ -8,6 +8,8 @@
     display: flex;
     align-items: center;
     max-width: 1320px;
+    /* padding-bottom: 156px; */
+    /* margin-bottom: 156px; */
 }
 
 .l-header__logo {
@@ -341,9 +343,9 @@
 }
 
 .p-section-history__list {
-    display: flex;
     gap: 20px;
-
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .p-section-history__item {
@@ -381,14 +383,14 @@
 }
 
 .p-section-history__card-title {
-    margin-top: 9px;
+    margin-bottom: 4px;
     color: var(--color-heading);
     font-size: 20px;
     line-height: 28px;
 }
 
 .p-section-history__card-description {
-    margin-top: 15px;
+    margin-bottom: 17px;
     color: var(--color-text);
     font-size: 14px;
     line-height: 20px;
@@ -535,7 +537,7 @@
 
 .p-section-qualification .wrapper {
     max-width: 1320px;
-    min-height: 1092px;
+    /* min-height: 1092px; */
     padding-top: 88px;
 }
 
@@ -722,11 +724,19 @@
             var(--color-footer-background, #13243d) 50%,
             var(--color-footer-background, #13243d) 100%);
 }
+/* .p-section-sensitive-person__content::before {
+	content: "";
+    position: absolute;
+    right: 0;
+    width: calc(50% + 200px);
+    top: 0;
+    bottom: 0;
+    background: #000;
 
+} */
 .p-section-sensitive-person .wrapper {
     display: flex;
     max-width: 1920px;
-    min-height: 666px;
 }
 
 .p-section-sensitive-person__image {
@@ -852,7 +862,6 @@
     display: flex;
     align-items: center;
     max-width: 1330px;
-    min-height: 592px;
 }
 
 .p-section-patient-stories__content {
@@ -892,7 +901,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 32px;
-    /* margin-top: 54px; */
 }
 
 .p-section-patient-stories__navigation {
@@ -982,7 +990,6 @@
 
 .p-section-latest-event-show .wrapper {
     max-width: 1320px;
-    min-height: 672px;
     padding-top: 97px;
 }
 
@@ -1151,8 +1158,6 @@
     background-color: var(--color-heading);
 }
 
-
-
 .l-footer {
     color: var(--color-footer-text, #9ba5b5);
     background-color: var(--color-footer-background,
@@ -1161,7 +1166,6 @@
 
 .l-footer .wrapper {
     max-width: 1320px;
-    min-height: 762px;
     padding-top: 117px;
 }
 
@@ -1169,8 +1173,8 @@
     display: flex;
     gap: 140px;
     align-items: start;
-    margin-bottom:  190px;
-    
+    margin-bottom: 190px;
+
 }
 
 .l-footer__contact-title {
@@ -1237,7 +1241,6 @@
 }
 
 .l-footer__address {
-    /* margin-top: 24px; */
     color: var(--color-footer-text, #9ba5b5);
     font-size: 12px;
     font-style: normal;
@@ -1249,7 +1252,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 4px;
-    /* margin-top: 20px; */
 }
 
 .l-footer__nav-item {
@@ -1275,7 +1277,6 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    /* margin-top: 20px; */
 }
 
 .l-footer__social-item {

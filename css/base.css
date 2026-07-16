@@ -11,18 +11,13 @@ body {
 }
 
 .container {
-    /* width: 100%; */
     min-height: 100vh;
     overflow: hidden;
 }
 
 .wrapper {
     width: 100%;
-    max-width: calc(
-        var(--container-width) + var(--wrapper-padding) * 2
-    );
-    margin-inline: auto;
-    padding-inline: var(--wrapper-padding);
+    margin: 0 auto;
 }
 
 img {

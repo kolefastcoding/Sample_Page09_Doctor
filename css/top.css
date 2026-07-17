@@ -609,7 +609,7 @@
     content: "";
     position: absolute;
     right: 0;
-    width: calc(50% + 200px);
+    width: 64%;
     top: 0;
     bottom: 0;
     background: #132238;
@@ -642,7 +642,7 @@
     position: absolute;
     top: 105px;
     bottom: 105px;
-    left: 0;
+    left: 50px;
     width: 1px;
     background-color: rgba(255, 255, 255, 0.2);
     content: "";

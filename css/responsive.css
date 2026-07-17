@@ -204,27 +204,14 @@
     }
 
     .p-section-sensitive-person .wrapper {
+        /* grid-template-columns: 1fr 1fr; */
         max-width: 1439px;
         min-height: 620px;
     }
 
-    .p-section-sensitive-person__image {
-        position: relative;
-        top: 0;
-        right: auto;
-        left: 0;
-        width: 52%;
-        height: auto;
-        margin-right: 0;
-        padding-top: 48px;
-    }
+    
 
-    .p-section-sensitive-person__content {
-        width: 48%;
-        margin-right: 0;
-        margin-left: 0;
-        padding: 72px 52px;
-    }
+    
 
     .p-section-sensitive-person__description,
     .p-section-sensitive-person__item-description {
@@ -547,30 +534,28 @@
         display: none;
     }
 
+    .p-section-sensitive-person {
+        overflow: hidden;
+    }
+
     .p-section-sensitive-person .wrapper {
-        flex-direction: column;
-        max-width: 1024px;
-        min-height: 0;
+        position: relative;
+        min-height: 620px;
         padding-bottom: 0;
     }
 
-    .p-section-sensitive-person__image {
-        position: relative;
-        top: 0;
-        right: auto;
-        left: 0;
-        width: 100%;
-        height: auto;
-        margin-right: 0;
-        padding-top: 48px;
-        background-color: #f1f2f4;
-    }
+    
 
     .p-section-sensitive-person__content {
-        width: 100%;
+        width: 50%;
         margin-right: 0;
-        margin-left: 0;
-        padding: 72px 56px;
+        margin-left: auto;
+        padding: 72px 52px 72px 72px;
+    }
+
+    .p-section-sensitive-person__content::before {
+        top: 72px;
+        bottom: 72px;
     }
 
     .p-section-sensitive-person__description,

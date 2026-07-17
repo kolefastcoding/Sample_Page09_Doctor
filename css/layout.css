@@ -83,14 +83,16 @@
 
 .l-header__nav-item--contact {
     margin-left: 35px;
+    padding-top: 9px;
 }
 
 .l-header__nav-contact {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 24px;
+    padding: 12px 24px;
     border: 1px solid #FFD91A;
+    font-weight: bold;
     font-size: 14px;
     transition: all 0.3s ease;
     background-color: var(--color-primary);
@@ -117,9 +119,8 @@
 }
 
 .l-footer {
-    color: var(--color-footer-text, #9ba5b5);
-    background-color: var(--color-footer-background,
-            #13243d);
+    /* color: var(--color-footer-text, #9ba5b5); */
+    background-color: #132238;
 }
 
 .l-footer .wrapper {
@@ -136,7 +137,7 @@
 }
 
 .l-footer__contact-title {
-    color: var(--color-footer-heading, #ffffff);
+    color: #FFFFFF;
     font-size: 40px;
     font-weight: bold;
     line-height: 48px;
@@ -149,7 +150,7 @@
 
 .l-footer__contact-description {
     max-width: 540px;
-    color: var(--color-footer-text, #9ba5b5);
+    color: #A5ACB5;
     font-size: 20px;
     line-height: 28px;
     margin-bottom: 15px;

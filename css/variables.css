@@ -1,7 +1,6 @@
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../assets/fonts/JetBrainsMono-VariableFont_wght.ttf")
-        format("truetype");
+    src: url("../assets/fonts/JetBrainsMono-VariableFont_wght.ttf") format("truetype");
     font-style: normal;
     font-weight: 100 800;
     font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
     font-family: "JetBrains Mono";
-    src: url("../assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf")
-        format("truetype");
+    src: url("../assets/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf") format("truetype");
     font-style: italic;
     font-weight: 100 800;
     font-display: swap;
@@ -29,9 +27,9 @@
         monospace;
 
     --color-white: #ffffff;
-    --color-black: #111214;
+    --color-black: #132238;
 
-    --color-primary: #ffd000;
+    --color-primary: #FFD91A;
     --color-primary-hover: #edc200;
     --color-primary-light: #fff0a4;
 

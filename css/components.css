@@ -2,11 +2,13 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 21px 32px;
-    color: var(--color-heading);
-    font-size: 16px;
+    min-height: 64px;
+    padding-inline: 32px;
+    border: 1px solid #FFD91A;
     font-weight: bold;
-    border: 1px solid transparent;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    gap: 12px;
 }
 
 .c-button:hover {
@@ -30,37 +32,16 @@
 }
 
 .c-button--primary:hover {
-    background-color: var(--color-primary-hover);
+    color: var(--color-black);
+    background-color: var(--color-white);
     border-color: var(--color-primary-hover);
 }
 
 .c-button--outline {
-    background-color: #FFFFFF;
+    background-color: var(--color-white);
     border-color: var(--color-primary);
 }
 
 .c-button--outline:hover {
     background-color: var(--color-primary);
-}
-
-.c-theme-toggle {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 42px;
-    height: 42px;
-    background-color: var(--color-primary);
-    border: 1px solid #e4bb00;
-    border-radius: 50%;
-}
-
-.c-theme-toggle:hover {
-    background-color: var(--color-primary-hover);
-    transform: translateY(-2px);
-}
-
-.c-theme-toggle__icon {
-    width: 22px;
-    height: 22px;
-    object-fit: contain;
 }

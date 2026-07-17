@@ -6,51 +6,37 @@
 
 html,
 body,
-div,
-span,
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
-a,
-img,
 ul,
-li,
-article,
-aside,
-header,
-nav,
-main,
-section,
-footer,
-button {
+ol,
+blockquote,
+figure {
     margin: 0;
     padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
 }
 
-article,
-aside,
-header,
-nav,
-main,
-section,
-footer {
+main {
     display: block;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    line-height: 1;
-}
-
-ul {
+ul,
+ol {
     list-style: none;
+}
+
+address {
+    font-style: normal;
+}
+
+img,
+picture {
+    display: block;
 }
 
 a {
@@ -66,7 +52,9 @@ select {
 }
 
 button {
+    padding: 0;
     color: inherit;
-    background: none;
+    background-color: transparent;
+    border: 0;
     cursor: pointer;
 }

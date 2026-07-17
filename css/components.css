@@ -20,10 +20,12 @@
 }
 
 .c-button__icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     flex: 0 0 auto;
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
+    width: 24px;
+    height: 24px;
 }
 
 .c-button--primary {
@@ -38,10 +40,13 @@
 }
 
 .c-button--outline {
+    color: var(--color-black);
     background-color: var(--color-white);
     border-color: var(--color-primary);
 }
 
 .c-button--outline:hover {
+    color: var(--color-black);
     background-color: var(--color-primary);
+    border-color: var(--color-primary);
 }

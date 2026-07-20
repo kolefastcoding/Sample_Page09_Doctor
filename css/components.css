@@ -36,13 +36,16 @@
 .c-button--primary:hover {
     color: var(--color-black);
     background-color: var(--color-white);
-    border-color: var(--color-primary-hover);
+    border: 2px solid var(--color-primary);
+    /* border-color: var(--color-primary-hover); */
 }
 
 .c-button--outline {
     color: var(--color-black);
     background-color: var(--color-white);
-    border-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    /* border-color: var(--color-primary); */
+    
 }
 
 .c-button--outline:hover {

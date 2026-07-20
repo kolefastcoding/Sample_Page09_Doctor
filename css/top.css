@@ -216,7 +216,7 @@
 .p-section-history__item {
     padding: 32px;
     width: 424px;
-    border: 1px solid var(--color-border);
+    border: 1px solid #E6E8CB;
     /* gap: 32px; */
     transition:
         border-color 0.3s ease,
@@ -623,7 +623,7 @@
 .p-section-sensitive-person__image {
     position: absolute;
     z-index: 1;
-    width: 42%;
+    width: 40%;
     bottom: 0;
     
 }
@@ -645,6 +645,13 @@
     width: 1px;
     background-color: rgba(255, 255, 255, 0.2);
     content: "";
+}
+
+@media  (max-width: 1439px) {
+    .p-section-sensitive-person__content::before {
+        content: none;
+    }
+
 }
 
 .p-section-sensitive-person__title {
